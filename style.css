@@ -294,8 +294,22 @@ h6 {
   padding-bottom: 50px;
 }
 
-.about-wrapper #social-links {
-  grid-area: "socail-links";
+.about-wrapper .social-links {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+}
+
+.about-wrapper .social-links h3 {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.about-wrapper .social-links .links {
+  padding: 30px;
 }
 
 @media screen and (max-width: 1200px) {

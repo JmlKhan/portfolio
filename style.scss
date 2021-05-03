@@ -233,8 +233,17 @@ h6 {font-size: 16px;}
       padding-bottom: 50px;
     }
 
-    #social-links{
-        grid-area: "socail-links";
+    .social-links{
+        display: grid;
+        justify-content: center;
+        padding: 50px;
+        h3{
+            padding-top: 70px;
+            text-align: center;
+        }
+        .links{
+            padding: 30px;
+        }
     }
     
 }
