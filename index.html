@@ -9,7 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link id = "theme-style" rel="stylesheet" href=""> 
+
+
 </head>
 <body>
     <section class="s1">
@@ -26,7 +29,7 @@
                         <div id="dot-3" class="browser-dot"></div>
                     </div>
                     <div id="navigation">
-                        <li><a href="#">Contact</a> </li>
+                        <li><a href="#contact-form">Contact</a> </li>
                     </div>
 
                 </div>
@@ -35,10 +38,10 @@
                     <h5 style="text-align: center; line-height: 0;" >Personalize Theme</h5>
 
                     <div class="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
                 
                     <p id="setting-note">Theme setting will be saved for <br>your next visit </p>
@@ -75,26 +78,27 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati possimus deleniti 
                         recusandae quaerat non officiis tempore iste quis temporibus hic, accusamus accusantium, 
                         voluptate, asperiores dolores tenetur. Quia similique aspernatur ducimus?</p>
-                        
-                <hr>
+                     <br>   
+                     <hr> <br>
 
-                <h4>TOP EXPERTISE</h4>
+                    <h4>TOP EXPERTISE</h4>
+                    <br>
 
-                <p>Front-end softwware engineer primary focun on 
-                    JacaScript + react Js: <a target = "_blank" href="">Download Resume</a> </p>
+                    <p>Front-end softwware engineer primary focun on 
+                    JacaScript + react Js: <a target = "_blank" href="">Download Resume</a> </p> <br>
 
                     <div id="skills">
                         <ul>
                             <li>JavaScript</li>
-                            <li>HTML/CSS</li>
+                            <li>HTML</li>
                             <li>C/C++</li>
                             <li>React</li>
                             <li>Redux</li>
                         </ul>
                         <ul>
-                            <li>JavaScript</li>
-                            <li>HTML/CSS</li>
-                            <li>C/C++</li>
+                            <li>Sass</li>
+                            <li>CSS</li>
+                            <li>Next js</li>
                             <li>React</li>
                             <li>Redux</li>
                         </ul>
@@ -116,15 +120,77 @@
 
     <section class="s1">
         <div class="main-container" >
-            Portfolio
+            <h3 style="text-align: center; padding-top: 30px;">Some of my past projects</h3>
+
+            <div class="post-wrapper">
+               <div>
+                <div class="post">
+                    <img class="thumbnail" src="./images/React App - Profile 1 - Microsoft​ Edge 5_4_2021 6_13_48 PM.png" alt="project1">
+
+                    <div class="post-preview">
+                        <h6 class="post-title">Music Player</h6>
+                        <p style="color: black;">This is a music player created by using reactJs.</p>
+                        <a target="_blank" href="https://musicop.netlify.app/">Read more</a>
+                    </div>
+                </div>
+
+              </div>
+              <div>
+
+                <div class="post">
+                    <img class="thumbnail" src="./images/greenC.jpg" alt="project1">
+
+                    <div class="post-preview">
+                        <h6 class="post-title">Post Title</h6>
+                        <p style="color: black;" >this is a sentence. some more text</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="post">
+                    <img class="thumbnail" src="./images/greenC.jpg" alt="project1">
+
+                    <div class="post-preview">
+                        <h6 class="post-title">Post Title</h6>
+                        <p style="color: black;" >this is a sentence. some more text</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
     </section>
 
     <section class="s2">
         <div class="main-container" >
-            Contact
+            <h3 style="text-align: center; padding-top: 30px;">Get In Touch </h3>
+
+            <form id="contact-form"
+            action="mailto:jmlkhon17@gmail.com" 
+            method="post"
+            enctype="multipart/form-data"
+            name="EmailForm"
+            >
+               
+                <label for="name">Name</label>
+                <input type="text" class="input-field" id="name" name="name">
+
+                <label for="subject">Subject</label>
+                <input type="text" class="input-field" id="subject" name="subject">
+
+                <label for="email">Email</label>
+                <input type="text" class="input-field" id="email" name="email">
+                
+                <label for="message">Message</label>
+                <textarea class="input-field" name="message" id="message" cols="30" rows="10"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send" >
+
+            </form>
         </div>
     </section>
     <script src="https://kit.fontawesome.com/0f5a42e7bd.js" crossorigin="anonymous"></script>
+    <script src="./script.js" ></script>
 </body>
 </html>
